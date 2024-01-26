@@ -1,0 +1,9 @@
+@import "./colors.scss";
+@import "./list.scss";
+
+body{
+  background-color: $neutral-bg-active;
+  h1,h2,h3,p,span{
+    color: $neutral-text-primary;
+  }
+}

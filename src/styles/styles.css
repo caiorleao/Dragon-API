@@ -1,0 +1,62 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  border: 1px solid #007ACC;
+  margin: 0 64px 0 64px;
+  display: flex;
+  justify-content: space-between;
+}
+ul li:hover .action-buttons {
+  opacity: 1;
+}
+ul li .dragon-info {
+  flex: 1;
+}
+ul li .dragon-info p {
+  margin: 24px;
+}
+ul li .dragon-info p.name {
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.action-btn.delete {
+  background-color: #e57373;
+}
+.action-btn.delete:hover {
+  background-color: #ef5350;
+}
+.action-btn.details {
+  background-color: #2196f3;
+}
+.action-btn.details:hover {
+  background-color: #42a5f5;
+}
+.action-btn.edit {
+  background-color: #ff9800;
+}
+.action-btn.edit:hover {
+  background-color: #ffa726;
+}
+.action-btn.create {
+  background-color: #3d9970;
+}
+.action-btn.create:hover {
+  background-color: #44aa7b;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+body h1, body h2, body h3, body p, body span {
+  color: #F1f1f1;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,59 @@
+ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+        border: 1px solid $main-brand;
+        margin: 0 64px 0 64px;
+        display: flex;
+        justify-content: space-between;
+
+        &:hover {
+            .action-buttons {
+                opacity: 1;
+            }
+        }
+
+        .dragon-info {
+            flex: 1;
+            p {
+                &.name {
+                    font-weight: bold;
+                }
+                margin: 24px;
+            }
+        }
+    }
+}
+
+.action-buttons {
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.action-btn {
+    &.delete {
+        background-color: $error-bg-primary;
+        &:hover {
+            background-color: $error-hover-bg-primary;
+        }
+    }
+    &.details {
+        background-color: $informative-bg-primary;
+        &:hover {
+            background-color: $informative-hover-bg-primary;
+        }
+    }
+    &.edit {
+        background-color: $warning-bg-primary;
+        &:hover {
+            background-color: $warning-hover-bg-primary;
+        }
+    }
+    &.create {
+        background-color: $complementary-bg-primary;
+        &:hover {
+            background-color: $complementary-hover-bg-primary;
+        }
+    }
+}
